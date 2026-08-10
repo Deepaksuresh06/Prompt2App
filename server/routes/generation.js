@@ -5,7 +5,7 @@ const User = require('../models/UserModel');
 const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
-const generateCodeWithAI = require('../services/aiService');
+const processGeneration = require('../services/generationWorker');
 
 // =======================================
 // Create new generation request

@@ -2,9 +2,9 @@ const path = require('path');
 const fs = require('fs');
 
 const Generation = require('../models/GenerationModel');
-const generateCodeWithAI = require('./aiService');
+const generateCodeWithAI = require('./aiServices');
 const writeFiles = require('./fileWriter');
-const zipProject = require('./zipService');
+const zipProject = require('./zipServices');
 
 async function processGeneration(id, prompt, stack) {
     try {
